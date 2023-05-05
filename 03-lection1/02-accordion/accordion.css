@@ -1,73 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+.accordion {
+  max-width: 730px;
+}
 
 .accordion__item {
     border: 1px solid #ACB5BD;
     border-radius: 8px;
+    color:  #212429;
     margin-bottom: 8px;
-    max-width: 730px;
-  }
+    padding-left: 32px; 
+    padding-right: 32px; 
+}
   
-  .accordion__summary {
+.accordion__summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-top: 24px;
-    margin-bottom: 24px;
     cursor: pointer;
-    color:  #212429;
-  }
-  
-  .accordion__title {
-    margin: 0;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
   .accordion__content {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    display: none;
     color:  #495057;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 32px;
-  }
-  
-  .accordion__item[open] .accordion__content {
-    display: block;
-  }
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
 
-  .accordion__item[open] .accordion__summary {
-    margin-bottom: 16px;
-  }
-
-  .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 }
 
+.accordion__text {
+  margin: 0;
+}
+
 .accordion__summary::after {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 8px;
-  margin-right: 8px;
-  background-image: url('arrow.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 8px;
+    margin-right: 8px;
+    background-image: url('arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
   
-  .accordion__item[open] .accordion__summary::after {
+.accordion__item[open] .accordion__summary::after {
     transform: rotate(180deg);
-  }
+}
+
+.accordion__item[open] .accordion__summary {
+    padding-bottom: 0px;
+}
 
 .accordion__item:last-child {
     margin-bottom: 0;
