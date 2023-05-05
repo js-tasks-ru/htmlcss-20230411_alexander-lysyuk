@@ -8,9 +8,9 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    margin-right: 32px;
     min-width: 182px;
     height: 48px;
+    font-family: 'Roboto';
   }
   
   .button:disabled {
@@ -20,6 +20,7 @@
 
   .button_primary {
     background: #4263EB;
+    margin-right: 32px;
     color: #fff;
   }
   
@@ -29,6 +30,7 @@
 
   .button_secondary {
     background: #7048E8;
+    margin-right: 32px;
     color: #fff;
   }
 
@@ -39,6 +41,7 @@
   .button_alternate {
     background: transparent;
     color: #495057;
+    margin-right: 32px;
     border: 1px solid #ACB5BD;
   }
 
