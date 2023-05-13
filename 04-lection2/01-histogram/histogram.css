@@ -1,12 +1,14 @@
 .histogram {
-    width: 354px;
-    height: 185px;
     background-color: var(--white);
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right:24px;
+    padding-bottom: 24px;
   }
   
   .histogram__header {
@@ -14,9 +16,6 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 16px;
-    padding-left: 24px;
-    padding-right:24px;
   }
   
   .histogram__title {
@@ -45,22 +44,21 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: --black;
+    color: var(--black);
     width: 100%;
+    margin-top: 6px;
   }
   
   .histogram__bars {
     display: flex;
+    margin-top: 39px;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    gap: 1px;
     height: 50px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 24px;
   }
   
   .histogram__bar {
-    width: 9px;
+    flex-grow: 1;
     background-color: var(--blue-2);
   }
